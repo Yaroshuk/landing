@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+.shop-product {
+  max-width: 100% !important;
+  margin: 0 auto;
+}
+
 blockquote,
 body,
 code,
@@ -134,7 +140,7 @@ b {
 a {
   text-decoration: none;
   color: #095540;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 a[href^="mailto:"],
 a[href^="tel:"] {
@@ -145,7 +151,7 @@ button {
   background: 0 0;
   border: none;
   font: inherit;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -606,7 +612,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   width: 600px;
   max-width: 100%;
   overflow: visible;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.1s, opacity 0.2s;
   transform: scale(0.9);
   opacity: 0;
 }
@@ -670,6 +676,16 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   height: 30px;
   margin-right: 15px;
 }
+.button .__inst {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.button:hover .__inst {
+  margin: 0;
+  filter: invert(100%);
+}
+
 .button,
 .gc-form button {
   display: inline-flex;
@@ -691,17 +707,30 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   background: #c8d750;
   color: #171b1a;
 }
+
+.button_avocado:hover {
+  background: #c8d750;
+  color: #ffffff;
+}
+
+.button_inst {
+  background: #c8d750;
+}
 .button_avocado svg,
 .modal-form form button svg {
   fill: #095540;
 }
 .button_secondary,
 .gc-form button {
-  background: #6fa089;
+  background: #95a06f;
   color: #fff;
 }
 .button_primary {
   background: #095540;
+  color: #fff;
+}
+.button_primary:hover {
+  background: #c8d750;
   color: #fff;
 }
 .button_gold {
@@ -2486,6 +2515,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     padding: 1.44928vw 2.89855vw;
     min-height: 6.23188vw;
   }
+
   .button_medium-medium {
     font-size: 1.15942vw;
     padding: 0.72464vw 1.44928vw;
@@ -2502,6 +2532,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     width: 2.17391vw;
     height: 2.17391vw;
     margin-right: 1.08696vw;
+  }
+
+  .button .__inst {
+    width: 2.17391vw;
+    height: 2.17391vw;
+    margin: 0;
   }
   .button,
   .gc-form button {
@@ -4109,6 +4145,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     width: 3.4375vw;
     margin-right: 1.25vw;
   }
+  .button .__inst {
+    width: 3.4375vw;
+    height: 3.4375vw;
+    margin: 0;
+  }
+
   .button_medium {
     font-size: 3.125vw;
   }
@@ -4130,7 +4172,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     border-radius: 13.75vw;
   }
   .list__item {
-    margin-top: 3.125vw;
+    margin-top: 6.125vw;
     padding-left: 11.875vw;
     font-size: 3.75vw;
   }
@@ -4390,7 +4432,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     margin-top: 6.25vw;
   }
   .hero__start {
-    font-size: 3.125vw;
+    margin-left: 5.35vw;
+    font-size: 2vw;
+    text-align: left;
     margin-top: 3.75vw;
   }
   .programm__row {
